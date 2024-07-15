@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <h1>Taehyeon의 가위, 바위, 보 게임</h1>
+    <div class="container">
+        <div class="char" id="char">
+            <h2 class="text-center">캐릭터 선택</h2>
+            <p>Q. 내 캐릭터를 선택하세요.</p>
+            <div class="img-chr">
+                <img src="../image/char.jpg" alt="street" width="100%" usemap="#mychar" />
+                <map name="mychar">
+                    <area shape="rect" coords="0,0,158,208" onClick="char(0)" alt="01" href="javascript:void(0)">
+                    <area shape="rect" coords="158,0,316,208" onClick="char(1)" alt="02" href="javascript:void(0)">
+                    <area shape="rect" coords="316,0,474,208" onClick="char(2)" alt="03" href="javascript:void(0)">
+                    <area shape="rect" coords="474,0,632,208" onClick="char(3)" alt="04" href="javascript:void(0)">
+
+                    <area shape="rect" coords="0,208,158,416" onClick="char(4)" alt="05" href="javascript:void(0)">
+                    <area shape="rect" coords="158,208,316,416" onClick="char(5)" alt="06" href="javascript:void(0)">
+                    <area shape="rect" coords="316,208,474,416" onClick="char(6)" alt="07" href="javascript:void(0)">
+                    <area shape="rect" coords="474,208,632,416" onClick="char(7)" alt="08" href="javascript:void(0)">
+
+                    <area shape="rect" coords="0,416,158,624" onClick="char(8)" alt="09" href="javascript:void(0)">
+                    <area shape="rect" coords="158,416,316,624" onClick="char(9)" alt="10" href="javascript:void(0)">
+                    <area shape="rect" coords="316,416,474,624" onClick="char(10)" alt="11" href="javascript:void(0)">
+                    <area shape="rect" coords="474,416,632,624" onClick="char(11)" alt="12" href="javascript:void(0)">
+                </map>
+            </div>
+        </div>
+
+        <!--컴퓨터-->
+        <div class="char" id="char2">
+            <h2 class="text-center">캐릭터 선택</h2>
+            <p>Q. 컴퓨터의 캐릭터를 선택하세요.</p>
+            <div class="img-chr">
+                <img src="../image/char.jpg" alt="street" width="100%" usemap="#mychar2" />
+                <map name="mychar2">
+                    <area shape="rect" coords="0,0,158,208" onClick="char2(0)" alt="01" href="javascript:void(0)">
+                    <area shape="rect" coords="158,0,316,208" onClick="char2(1)" alt="02" href="javascript:void(0)">
+                    <area shape="rect" coords="316,0,474,208" onClick="char2(2)" alt="03" href="javascript:void(0)">
+                    <area shape="rect" coords="474,0,632,208" onClick="char2(3)" alt="04" href="javascript:void(0)">
+
+                    <area shape="rect" coords="0,208,158,416" onClick="char2(4)" alt="05" href="javascript:void(0)">
+                    <area shape="rect" coords="158,208,316,416" onClick="char2(5)" alt="06" href="javascript:void(0)">
+                    <area shape="rect" coords="316,208,474,416" onClick="char2(6)" alt="07" href="javascript:void(0)">
+                    <area shape="rect" coords="474,208,632,416" onClick="char2(7)" alt="08" href="javascript:void(0)">
+
+                    <area shape="rect" coords="0,416,158,624" onClick="char2(8)" alt="09" href="javascript:void(0)">
+                    <area shape="rect" coords="158,416,316,624" onClick="char2(9)" alt="10" href="javascript:void(0)">
+                    <area shape="rect" coords="316,416,474,624" onClick="char2(10)" alt="11" href="javascript:void(0)">
+                    <area shape="rect" coords="474,416,632,624" onClick="char2(11)" alt="12" href="javascript:void(0)">
+                </map>
+            </div>
+        </div>
+
+        <div class="col">
+            <h3 class="text-center">나</h3>
+            <div class="box" id="me"></div>
+        </div>
+        <div class="col">
+            <h3 class="text-center">컴퓨터</h3>
+            <div class="box" id="com"></div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
