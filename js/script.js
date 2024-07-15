@@ -42,19 +42,19 @@ function coor(n) {
             break;
         case 4:
             coordx = 0;
-            coordy = 206;
+            coordy = 210;
             break;
         case 5:
             coordx = 158;
-            coordy = 206;
+            coordy = 210;
             break;
         case 6:
             coordx = 318;
-            coordy = 206;
+            coordy = 210;
             break;
         case 7:
             coordx = 478;
-            coordy = 206;
+            coordy = 210;
             break;
         case 8:
             coordx = 0;
@@ -65,7 +65,7 @@ function coor(n) {
             coordy = 424;
             break;
         case 10:
-            coordx = 346;
+            coordx = 316;
             coordy = 424;
             break;
         case 11:
